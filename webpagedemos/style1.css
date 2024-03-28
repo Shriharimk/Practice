@@ -1,0 +1,109 @@
+.body{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.backgroundimg {
+  background-image: url(icons/pedro-lastra-Nyvq2juw4_o-unsplash.jpg);
+  height: 700px;
+  width: 1300px;
+  opacity: 1;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  margin: 0; /* Remove margin for body */
+}
+.containerformlogo{
+  display:flex;
+  position: relative;
+  margin-right: 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 2px;
+
+}
+.productimg{
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  top:10%;
+  left: 10%;
+}
+
+.base {
+  padding: 50px; /* Adjust height as needed */
+  /*background-image: linear-gradient(white, rgba(255, 128, 0, 0.723));*/
+  background-color: rgba(222, 222, 222, 0.836);
+  border-radius: 20px; /* Adjust border radius as needed */
+  display: flex;
+  flex-direction: column; /* Place items vertically */
+  justify-content: space-evenly;
+  align-items: center; /* Center content horizontally */
+  position: absolute;
+  left: 56%;
+  top: 47%;
+
+}
+.logo{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 5px;
+}
+/* Remove display: flex from .name, .pass, and .sub */
+.name, .pass, .sub {
+  text-align: center;
+}
+
+/* Adjust margins and padding for better spacing */
+.name label, .pass label {
+  margin-bottom: 10px;
+}
+
+/* Center the submit button */
+.sub button {
+  margin-top: 10px;
+}
+.sub{  
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-left: 25%;
+  opacity: 0.65;
+  transition: opacity 0.65s;
+}
+.sub:hover{
+  opacity: 1;
+}
+.pass{
+  margin-left: 2px;
+}
+
+.form{
+  background-color: white;
+  position: absolute;
+  display: flex;
+  margin-left: 5px;
+  margin-top :5px;
+  width: 20vh auto 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+}
+.name{  
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+}
+.pass{  
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+}

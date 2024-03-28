@@ -1,0 +1,82 @@
+.row1 {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Set a minimum height for grid items */
+.products {
+  min-height: 200px; /* Set an appropriate minimum height */
+  /* Remove or adjust height and width properties here */
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.products .information {
+  /* Adjust the styles of child elements as needed */
+  margin: 0;
+  padding: 0;
+}
+.thumbnail1,
+.thumbnail2,
+.thumbnail3,
+.thumbnail4,
+.thumbnail5,
+.thumbnail6 {
+  /* Remove background-size property */
+  /* Set width and height here */
+  height: 190px;
+  width: 190px;
+  object-fit: cover; /* To handle image aspect ratio */
+}
+.thumbnail5{
+  margin-left: 10px;
+}
+
+@media (max-width: 970px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+.desc {
+  color: rgb(96, 96, 96);
+  font-size: 13px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.go-to-page {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.Title {
+  margin: 0px;
+  width: 250px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.information {
+  width: 200px;
+  vertical-align: top;
+  margin: 4px;
+}

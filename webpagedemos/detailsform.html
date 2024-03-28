@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add a fade-in animation to the form */
+    .container {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .displayData{
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid black;
+    }
+  </style>
+  <script src="script.js"></script>
+  <title>Details</title>
+</head>
+<body style="background-color: rgba(61, 61, 61, 0.482);">
+  <div class="container">
+    <form id="form">
+      <div>
+        <label for="name">NAME</label>
+        <input type="text" class="name" id="name">
+      </div>
+      <div>
+        <label for="email">EMAIL</label>
+        <input type="email" class="email" id="email">
+      </div>
+      <div>
+        <label for="desc">DESCRIPTION</label>
+        <input type="text" class="desc" id="desc">
+      </div>
+      <div>
+        <button type="button-sub" onclick="saveData()">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div id="displayData"></div>  
+</body>
+</html>

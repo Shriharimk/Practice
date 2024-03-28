@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+    <title>LOGINDEMO</title>
+    <script>
+    function validate() {
+        const name = document.getElementById("name").value;
+        const password = document.getElementById("password").value;
+
+        if (name === "SMK" && password === "123") {
+          console.log("Successfully validated");
+          return true; // Allow form submission
+        } else {
+          console.log("Wrong password");
+          return false; // Prevent form submission
+        }
+      }
+    </script>
+  </head>
+  <body style="font-family: Roboto;" class="backgroundimg">
+    <div>
+      <img class="productimg" src="icons/1680726288-75f-product-family-edited.webp">
+      <div class="base">
+        <div class="containerformlogo">
+          <div>
+            <img class="logo" src="icons/header-logo.png">
+          </div>
+          <div class="loginform"></div>
+            <form id="form" onsubmit="return validate()" action="success.html" method="GET">
+              <div class="name">
+                <label for="name">USERNAME</label>
+                <input type="text" class="namebx" id="name">
+              </div>
+              <div class="pass">
+                <label for="password">PASSWORD</label>
+                <input type="password" class="passwordbx" id="password">
+              </div>
+              <div>
+                <button class="sub" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
