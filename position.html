@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>position demo</title>
+  </head>
+  <body style="padding-bottom: 1000px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-left: 60px;">
+    <div style="
+    color: black;
+    background-color: grey;
+    height: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 20px;">
+      header
+    </div>
+    <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    position: relative;">
+      div1
+      <div class="absolute" style="
+        position: absolute;
+        background-color: red;
+        color: black;
+        top: 150px;
+        right: 20px;">        
+        div2
+    </div>
+    </div>
+    
+
+    <div class="sidebar" style="
+    background-color: lightgreen;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    bottom: 0px;
+    width: 50px;">sidebar
+
+    <div class="absolute" style="
+    position: absolute;
+    background-color: red;
+    color: black;
+    left: 0px;
+    top: 20px;/*now it is wrt to the sidebar*/">
+      absolute
+    </div>
+    <div class="absolute" style="
+    position: absolute;
+    background-color: red;
+    color: black;
+    right: 0px;
+    top: 0px;/*now it is wrt to the sidebar*/">
+      X
+    </div>
+    </div>
+    
+  </body>
+</html>

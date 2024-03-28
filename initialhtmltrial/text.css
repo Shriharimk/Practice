@@ -1,0 +1,41 @@
+p{
+  font-family: Roboto;
+}
+.t1{
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  line-height: 24px;
+  margin-bottom: 0px;/* by default each para has some margin top and bottom*/
+}
+.t2{
+  
+  color: #606060;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.t3{
+  margin-bottom: 16px;
+}
+.t4{
+  width: 400px;
+  line-height:20px;
+}
+.t5{
+  background-color:#dc3545;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px;
+  margin-top: 100px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 8px;
+  text-align: center;
+}
+a{
+  color: white;
+}
+.t6:hover{
+  text-decoration: underline;
+  cursor: pointer;
+} 

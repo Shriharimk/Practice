@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS DEMO</title>
+  </head>
+  <body>
+    <script>
+      /*console.log("Hello world");
+      var a;
+      var b = 7;
+      a=b;
+      console.log(a);
+      console.log(a/0);
+      //string immutabl: similar to java u can access
+      //string chars and array elements using index
+      var arraydemo=[1,2,"string",4.5,'a'];
+      console.log(arraydemo[1]+" "+arraydemo[2]+"  "+arraydemo);
+      console.log(arraydemo);
+      var arr=[[1,2,3],[1,"string"],'a',"string2"];
+      console.log(arr[0][1]+"  "+arr[1]+"  "+arr[3]+"  "+arr);
+      var arr2=[1,2,3,[4,5,6],[7,8,[9,10,[11]]]];
+      console.log(arr2[4][2][2][0]);
+      var arr3=[1,2,3];
+      arr3.push("hello");
+      console.log(arr3);
+      var removed= arr3.pop();
+      console.log("removed item : "+removed);
+      console.log(arr3);
+
+
+      var myList=[["cereal",3],["milk",2],["eggs",6]];
+      //this can be used like a key value pair 
+      //where the key can be in myList[i][0] and the 
+      //and theh value can be in myList[i][1]
+      console.log("How many milk? "+myList[1][1]);
+
+      //functions in js
+      function f1(){
+        console.log("op 1");
+      }
+      function f2(a, b){
+        console.log(a+" "+b);
+      }
+      f2(7,"ooooo");
+
+
+      console.log("variable demo");
+      var globa1=12;
+      function fun1(){
+        global2=13;
+        var local=2;
+      }
+      function fun2(){
+        if(typeof(globa1)!= 'undefined')
+          console.log(globa1+" global1");
+        if(typeof(global2)!='undefined')
+          console.log(global2+" global2");
+        if(typeof(local)!='undefined')//this will throw an error as this is not defined in this scope
+          console.log(local+" local is out of scope");
+        else
+          console.log(local+" local is out of scope");
+      }
+      fun1();
+      fun2();*/
+      //two variables with same name one must be global and one must be local their behavior is different tho when compared to java
+      /*
+      var global1=1;
+      function fun1(){
+        var global1=5;
+        return global1;
+      }
+      console.log(fun1());
+      console.log(global1);//here it ll show that the value of the variable is still the global value
+      //so the value of the variable will change only in the function after the function call the original value will be restored.
+
+      //when a function doenst return a value, then it return 'undefined' value by default
+      function fun1(num){
+        var sum=sum+num;
+      }
+      console.log(fun1(10));*/
+
+      /*
+      // loops example
+      for(var i=0;i<10;i++){
+        console.log(i);
+      }*/
+
+      //JSON object demo
+      var jsondemo=`{
+        "demo": {
+          "1":"value1",
+          "2":"value2",
+          "key3":"value3"
+        }
+      }`;
+      console.log("type of jsonDemo obj: "+typeof jsondemo);
+      var parsedData = JSON.parse(jsondemo);
+      console.log(parsedData);
+
+      var data = `{
+        "employee": {
+        "name": "John",
+        "age": 30,
+        "salary": 5000,
+        "city": "New York",
+        "skills": ["JavaScript", "CSS", "HTML"]
+        } 
+      }`;
+      
+    // current data type is string 'data'
+    console.log("type of data obj: "+typeof data);
+
+    // convert data into JSON object
+    var parsedData1 = JSON.parse(data);
+    console.log(parsedData1);
+
+    var data2=`{
+      "key1": "value1",
+      "key2": "value2",
+      "3": 4
+    }`;
+    console.log(typeof data2);
+    var pd= JSON.parse(data2);
+    console.log(pd);
+
+    //we can create a JSON obj directly
+    var jobj1={
+      "key1": 1,
+      "key2": 2,
+      "3":4
+    }
+    console.log(typeof jobj1);
+    console.log(jobj1);
+
+    //we create a string JSON obj by 
+    //wrapping it in `{}` then we will need to parse 
+    //that string object
+
+    var jobj1=`{
+      "key1": 1,
+      "key2": 2,
+      "3":4
+    }`
+    console.log(typeof jobj1);
+    console.log(jobj1);//this will be displayed like any other string
+    //to convert it into a JSON object we will need to parse it
+    console.log(JSON.parse(jobj1));
+    
+
+
+    </script>
+    Go to console to view code output
+  </body>
+</html>

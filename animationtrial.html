@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      animation demo
+    </title>
+    <style>
+      .div1{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
+      }
+      .div1:hover{
+        opacity: 0;
+      }
+      .div2{
+        height:100px;
+        width: 200px;
+        background-color: grey;
+      }
+      .div2:hover{
+        transform: skewX(20deg);
+      }
+      @keyframes animation1 {
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+        }
+        
+      }
+      .div3{
+        background-color: yellow;
+        height:100px;
+        width: 100px;
+        animation: animation1 5s 10;
+        /*
+        animation: animationname timefortheanimatio howmanytimesitshouldrepeat*/
+      }
+      .div4{
+        height:100px;
+        width: 200px;
+        background-color: purple;
+      }
+      .div4:hover{
+        transform: translate(20%, 20%);
+        transform: translateZ(50%);
+      }
+
+    </style>
+    <body>
+      <div class="div1">
+        div1 using the transiotion property
+      </div>
+      <div class="div2">
+        div2 transform demo
+      </div>
+      
+      <div class="div3">
+        div3 keyframe demo
+      </div>
+      <div class="div4">
+        div4 translate
+      </div>
+    </body>
+  </head>
+</html>

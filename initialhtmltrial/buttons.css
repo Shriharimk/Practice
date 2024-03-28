@@ -1,0 +1,70 @@
+#you{
+  background-color: #cc0000;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border:1px solid #cc0000;
+  border-radius:2px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.15s;/* this will delay the change to make it look smooth*/
+  vertical-align: top;/*by default all browsers align the elements based on text. to prevent this we can aligh based on the element using this*/
+}
+
+/*this is called a psueudo class. these classes will be applied along with the original class that is created.*/
+#you:hover{/*will be applied only when mouse hovers over it*/
+  opacity: 0.7;/* to make elements see thru*/
+}
+#you:active{/*this will be used when the button is clicked*/
+  opacity: 0.5;
+}
+
+
+#you2{
+  background-color: white;
+  color:#065fd4;
+  padding: 10px;/* when only one is mentioned then it is 10 in all top, bottom, left and right*/
+  border: 1px solid #065fd4;
+  border-radius:2px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.15s,color 0.11s;
+  /* if we put these transition in hover pseudo class itslef then as soon as we stop hovering
+  it ll immediately change it back to original without any delay*/
+  vertical-align: top;
+}
+#you2:hover{
+  background-color: #065fd4;
+  color:white;
+}
+#you2:active{
+  opacity: 0.7;
+}
+.tweet{
+  background-color: rgb(29, 155, 240);
+  color:white;
+  font-weight: bold;
+  padding: 10px 16px;/* when 2 are mentioned then 1st arg is for top and bottom and the 2nd arg is for te left and right*/
+  border:none;
+  width: 80px;
+  border-radius: 22px;/*for rounded buttons we need to keep the radius half of the height*/
+  cursor: pointer;
+  transition: box-shadow 0.15s,padding 0.15s;
+  vertical-align: top;
+}
+.tweet:hover{
+  box-shadow: 9px 3px 10px rgba(0,0,0, 0.15);
+  padding: 12px;
+}
+a{
+  color:black;
+  font-style: oblique;
+}
+a:active{
+  color: red;
+}
+a:hover{
+  color: blue;
+}

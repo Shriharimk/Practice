@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid demo</title>
+    <style>
+
+    </style>
+  </head>
+  <body style="padding-bottom: 500px;">
+    <div style="display: grid;
+    grid-template-columns: 100px 100px 200px;">
+      <div style="background-color: lightblue ;">
+        div1
+        <p> test  text</p>
+      </div>
+      <div style="background-color: lightcoral">
+        div2
+      </div>
+      <div style="background-color: lightgreen;">
+        div3
+      </div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+    margin-top: 20px;">
+      <div style="background-color: lightblue ;">
+        div1
+        <p>
+          test text
+        </p>
+      </div>
+      <div style="background-color: lightcoral">
+        div2
+      </div>
+      <div style="background-color: lightgreen;">
+        div3
+      </div>
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      margin-top: 20px;">
+        <div style="background-color: lightblue ;">
+          div1 <!--
+            /*this refers to free space
+            this means it will take up all the remaining
+            space of that particular cell in the grid*/-->
+        </div>
+        <div style="background-color: lightcoral">
+          div2
+        </div>
+    </div>
+    <div style=" 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    column-gap: 20px;
+    row-gap: 30px;
+    ">
+      <div style="background-color: lightblue ;
+      height: 200px;">
+        div1
+      </div>
+      <div style="height: 200px;
+      background-color: lightcoral">
+        div2
+      </div>
+      <div style="height: 200px;
+      background-color: lightgreen;">
+        div3
+      </div>
+      <div style="height: 200px;
+      background-color: lightgreen;">
+        div3
+      </div>
+      <div style="background-color: lightblue ;
+      height: 200px;">
+        div1
+      </div>
+      <div style="height: 200px;
+      background-color: lightcoral">
+        div2
+      </div>
+
+    </div>
+  </body>
+</html>
